@@ -1,0 +1,15 @@
+:root{
+    --rinsArt: "null";
+}
+
+.artContainer{
+    @include content;
+
+    a{
+        @include fontFixer(1.25rem);
+        text-decoration: none;
+        &:hover{
+            filter: brightness(0.9);
+        }
+    }
+}

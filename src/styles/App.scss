@@ -1,0 +1,86 @@
+@import './var';
+@import './horoscope';
+@import './sign';
+@import './rinsArt';
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+/* customizing input date */
+.birth{
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid black;
+  &::-webkit-datetime-edit { padding: 0 1em; }
+  /* &::-webkit-datetime-edit-fields-wrapper { background: silver; } */
+  &::-webkit-datetime-edit-text { color: royalblue; padding: 0 0.3em; }
+  &::-webkit-datetime-edit-month-field { color: purple; }
+  &::-webkit-datetime-edit-day-field { color: purple; }
+  &::-webkit-datetime-edit-year-field { color: purple; }
+  /* &::-webkit-inner-spin-button { display: none; } */
+  /* &::-webkit-calendar-picker-indicator { background: orange; } */
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 4;
+  color: white;
+}
+.birthHeader{
+  @include fontFixer(4rem)
+}
+header{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  @include content;
+}
+
+.birthForm{
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  align-items: center;
+
+  label{
+    padding-bottom: 1rem;
+    @include fontFixer(1.25rem);
+  }
+  p{
+    display: none;
+    color: red;
+  }
+
+  button{
+    width: 4rem;
+    height: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: white;
+    background-color: $formButtonColor;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4),
+    -1px 1px 2px rgba(0, 0, 0, 0.4);
+
+    &:hover{
+      cursor: pointer;
+      border: none;
+      filter: brightness(0.95);
+    }
+    &:focus{
+      outline: none;
+      border: black solid 1px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.show{
+  display: block;
+}
+
+
+

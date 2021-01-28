@@ -1,0 +1,139 @@
+@import '_var.scss';
+
+$large: 15vw;
+$small: 40vw;
+
+:root{
+    --taurus: url('./images/taurus.png');
+    --aquarius: url('./images/aquarius.png');
+    --sagittarius: url('./images/aquarius.png');
+    --capricorn: url('./images/aquarius.png');
+    --pisces: url('./images/aquarius.png');
+    --leo: url('./images/aquarius.png');
+    --virgo: url('./images/aquarius.png');
+    --libra: url('./images/aquarius.png');
+    --scorpio: url('./images/aquarius.png');
+    --aries: url('./images/aquarius.png');
+    --gemini: url('./images/aquarius.png');
+    --cancer: url('./images/aquarius.png');
+}
+
+.signContainer{
+    width: $small;
+    height: $small;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include content;
+    border-radius: 50%;
+}
+
+@media (min-width: 600px){
+    .signContainer{
+        width: $large;
+        height: $large;
+    }
+}
+
+// @mixin signPicker($image){
+//     background: url($image);
+//     width: $small;
+//     height: $small;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     @include content;
+//     border-radius: 50%;
+// }
+// // depending on class add the proper image
+// .Taurus{
+//     @include signPicker('./images/taurus.png');
+// }
+// .Aquarius{
+//     @include signPicker('./images/aquarius.png');
+// }
+// .Sagittarius{
+//     @include signPicker('./images/aquarius.png');
+// }
+// .Capricorn{
+//     @include signPicker('./images/aquarius.png');
+// }
+// .Pisces{
+//     @include signPicker('./images/aquarius.png');
+// }
+// .Leo{
+//     @include signPicker('./images/aquarius.png');
+// }
+// .Virgo{
+//     @include signPicker('./images/aquarius.png');
+// }
+// .Libra{
+//     @include signPicker('./images/aquarius.png');
+// }
+// .Scorpio{
+//     @include signPicker('./images/aquarius.png');
+// }
+// .Aries{
+//     @include signPicker('./images/aquarius.png');
+// }
+// .Gemini{
+//     @include signPicker('./images/aquarius.png');
+// }
+// .Cancer{
+//     @include signPicker('./images/aquarius.png');
+// }
+
+// @media (min-width: 600px){
+//     @mixin signPicker{
+//         width: $large;
+//         height: $large;
+//     }
+//     .Taurus{
+//         width: $large;
+//         height: $large;
+//     }
+//     .Aquarius{
+//         width: $large;
+//         height: $large;
+//     }
+//     .Sagittarius{
+//         width: $large;
+//         height: $large;
+//     }
+//     .Capricorn{
+//         width: $large;
+//         height: $large;
+//     }
+//     .Pisces{
+//         width: $large;
+//         height: $large;
+//     }
+//     .Leo{
+//         width: $large;
+//         height: $large;
+//     }
+//     .Virgo{
+//         width: $large;
+//         height: $large;
+//     }
+//     .Libra{
+//         width: $large;
+//         height: $large;
+//     }
+//     .Scorpio{
+//         width: $large;
+//         height: $large;
+//     }
+//     .Aries{
+//         width: $large;
+//         height: $large;
+//     }
+//     .Gemini{
+//         width: $large;
+//         height: $large;
+//     }
+//     .Cancer{
+//         width: $large;
+//         height: $large;
+//     }
+// }
