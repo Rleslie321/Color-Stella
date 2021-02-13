@@ -2,12 +2,18 @@ $formBorderColor: rgb(182, 118, 255);
 $formButtonColor: rgb(44, 81, 194);
 $contentBackground: rgba(255, 255, 255, 0.4);
 $font: 'Flamenco', cursive;
+$starlightColor: rgba(255,255,255,0.9);
 
 @mixin content{
-    border: 5px solid $formBorderColor;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid $formBorderColor;
     border-radius: 0.5rem;
     background-color: $contentBackground;
-    margin-bottom: 1rem;
+    margin: 0 1rem 1rem 1rem;
+    padding: 0.5rem 0;
 }
 @mixin fontFixer($size){
     font-size: $size;
@@ -15,4 +21,52 @@ $font: 'Flamenco', cursive;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4),
     4px 4px 2px rgba(0, 0, 0, 0.2);
     color: white;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.starAnim{
+    animation-name: starlight;
+    animation-duration: 2s;
+    // animation-iteration-count: infinite;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    // animation-delay: 2s;
+}
+
+@keyframes starlight {
+    0%{
+        box-shadow: none;
+    }
+    10%{
+        box-shadow: 0 0 1px 1px $starlightColor;
+    }
+    20%{
+        box-shadow: 0 0 2px 2px $starlightColor;
+    }
+    30%{
+        box-shadow: 0 0 3px 3px $starlightColor;
+    }
+    40%{
+        box-shadow: 0 0 4px 4px $starlightColor;
+    }
+    50%{
+        box-shadow: 0 0 5px 5px $starlightColor;
+    }
+    60%{
+        box-shadow: 0 0 6px 6px $starlightColor;
+    }
+    70%{
+        box-shadow: 0 0 7px 7px $starlightColor;
+    }
+    80%{
+        box-shadow: 0 0 8px 8px $starlightColor;
+    }
+    90%{
+        box-shadow: 0 0 9px 9px $starlightColor;
+    }
+    100%{
+        box-shadow: 0 0 10px 10px $starlightColor;
+    }
 }

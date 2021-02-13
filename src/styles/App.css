@@ -1,9 +1,190 @@
 @import url("https://fonts.googleapis.com/css2?family=Flamenco&display=swap");
+.starAnim {
+  -webkit-animation-name: starlight;
+          animation-name: starlight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes starlight {
+  0% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  10% {
+    -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.9);
+  }
+  20% {
+    -webkit-box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.9);
+  }
+  30% {
+    -webkit-box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.9);
+  }
+  40% {
+    -webkit-box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.9);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.9);
+  }
+  60% {
+    -webkit-box-shadow: 0 0 6px 6px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 6px 6px rgba(255, 255, 255, 0.9);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 7px 7px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 7px 7px rgba(255, 255, 255, 0.9);
+  }
+  80% {
+    -webkit-box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.9);
+  }
+  90% {
+    -webkit-box-shadow: 0 0 9px 9px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 9px 9px rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.9);
+  }
+}
+
+@keyframes starlight {
+  0% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  10% {
+    -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.9);
+  }
+  20% {
+    -webkit-box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.9);
+  }
+  30% {
+    -webkit-box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.9);
+  }
+  40% {
+    -webkit-box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.9);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.9);
+  }
+  60% {
+    -webkit-box-shadow: 0 0 6px 6px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 6px 6px rgba(255, 255, 255, 0.9);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 7px 7px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 7px 7px rgba(255, 255, 255, 0.9);
+  }
+  80% {
+    -webkit-box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.9);
+  }
+  90% {
+    -webkit-box-shadow: 0 0 9px 9px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 9px 9px rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.9);
+  }
+}
+
+.starAnim {
+  -webkit-animation-name: starlight;
+          animation-name: starlight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@keyframes starlight {
+  0% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  10% {
+    -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.9);
+  }
+  20% {
+    -webkit-box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.9);
+  }
+  30% {
+    -webkit-box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.9);
+  }
+  40% {
+    -webkit-box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.9);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.9);
+  }
+  60% {
+    -webkit-box-shadow: 0 0 6px 6px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 6px 6px rgba(255, 255, 255, 0.9);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 7px 7px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 7px 7px rgba(255, 255, 255, 0.9);
+  }
+  80% {
+    -webkit-box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.9);
+  }
+  90% {
+    -webkit-box-shadow: 0 0 9px 9px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 9px 9px rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.9);
+  }
+}
+
 .horoscopeContainer {
-  border: 5px solid #b676ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 10px solid #b676ff;
   border-radius: 0.5rem;
   background-color: rgba(255, 255, 255, 0.4);
-  margin-bottom: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  padding: 0.5rem 0;
 }
 
 .horoscopeContainer h1 {
@@ -11,6 +192,10 @@
   font-family: "Flamenco", cursive;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4), 4px 4px 2px rgba(0, 0, 0, 0.2);
   color: white;
+  padding: 0 1rem;
+  text-align: center;
+  margin: 0 1rem 1rem 1rem;
+  border-bottom: 2px ridge #b676ff;
 }
 
 .horoscopeContainer p {
@@ -18,21 +203,83 @@
   font-family: "Flamenco", cursive;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4), 4px 4px 2px rgba(0, 0, 0, 0.2);
   color: white;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.starAnim {
+  -webkit-animation-name: starlight;
+          animation-name: starlight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@keyframes starlight {
+  0% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  10% {
+    -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.9);
+  }
+  20% {
+    -webkit-box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.9);
+  }
+  30% {
+    -webkit-box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.9);
+  }
+  40% {
+    -webkit-box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.9);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.9);
+  }
+  60% {
+    -webkit-box-shadow: 0 0 6px 6px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 6px 6px rgba(255, 255, 255, 0.9);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 7px 7px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 7px 7px rgba(255, 255, 255, 0.9);
+  }
+  80% {
+    -webkit-box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.9);
+  }
+  90% {
+    -webkit-box-shadow: 0 0 9px 9px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 9px 9px rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.9);
+  }
 }
 
 :root {
   --taurus: url('./images/taurus.png');
   --aquarius: url('./images/aquarius.png');
-  --sagittarius: url('./images/aquarius.png');
-  --capricorn: url('./images/aquarius.png');
-  --pisces: url('./images/aquarius.png');
-  --leo: url('./images/aquarius.png');
-  --virgo: url('./images/aquarius.png');
-  --libra: url('./images/aquarius.png');
-  --scorpio: url('./images/aquarius.png');
-  --aries: url('./images/aquarius.png');
-  --gemini: url('./images/aquarius.png');
-  --cancer: url('./images/aquarius.png');
+  --sagittarius: url('./images/sagittarius.png');
+  --capricorn: url('./images/capricorn.png');
+  --pisces: url('./images/pisces.png');
+  --leo: url('./images/leo.png');
+  --virgo: url('./images/virgo.png');
+  --libra: url('./images/libra.png');
+  --scorpio: url('./images/scorpio.png');
+  --aries: url('./images/aries.png');
+  --gemini: url('./images/gemini.png');
+  --cancer: url('./images/cancer.png');
 }
 
 .signContainer {
@@ -41,10 +288,24 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 5px solid #b676ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 10px solid #b676ff;
   border-radius: 0.5rem;
   background-color: rgba(255, 255, 255, 0.4);
-  margin-bottom: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  padding: 0.5rem 0;
   border-radius: 50%;
 }
 
@@ -56,14 +317,39 @@
 }
 
 :root {
-  --rinsArt: "null";
+  --rinstaurus: url('./images/rinsImages/Photo-Coming-Soon.png');
+  --rinsaquarius: url('./images/rinsImages/Photo-Coming-Soon.png');
+  --rinssagittarius: url('./images/rinsImages/Photo-Coming-Soon.png');
+  --rinscapricorn: url('./images/rinsImages/Photo-Coming-Soon.png');
+  --rinspisces: url('./images/rinsImages/Photo-Coming-Soon.png');
+  --rinsleo: url('./images/rinsImages/Photo-Coming-Soon.png');
+  --rinsvirgo: url('./images/rinsImages/Photo-Coming-Soon.png');
+  --rinslibra: url('./images/rinsImages/Photo-Coming-Soon.png');
+  --rinsscorpio: url('./images/rinsImages/Photo-Coming-Soon.png');
+  --rinsaries: url('./images/rinsImages/Photo-Coming-Soon.png');
+  --rinsgemini: url('./images/rinsImages/Photo-Coming-Soon.png');
+  --rinscancer: url('./images/rinsImages/Photo-Coming-Soon.png');
 }
 
 .artContainer {
-  border: 5px solid #b676ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 10px solid #b676ff;
   border-radius: 0.5rem;
   background-color: rgba(255, 255, 255, 0.4);
-  margin-bottom: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  padding: 0.5rem 0;
 }
 
 .artContainer a {
@@ -71,7 +357,17 @@
   font-family: "Flamenco", cursive;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4), 4px 4px 2px rgba(0, 0, 0, 0.2);
   color: white;
+  padding: 0 1rem;
+  text-align: center;
   text-decoration: none;
+  text-shadow: none;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: 0.5rem;
+  background: #b676ff;
+  border-radius: 1rem;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), -1px 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), -1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .artContainer a:hover {
@@ -79,44 +375,157 @@
           filter: brightness(0.9);
 }
 
-/* customizing input date */
-.birth {
-  border-radius: 5px;
-  background-color: white;
-  border: 1px solid black;
-  /* &::-webkit-datetime-edit-fields-wrapper { background: silver; } */
-  /* &::-webkit-inner-spin-button { display: none; } */
-  /* &::-webkit-calendar-picker-indicator { background: orange; } */
+.artContainer h1 {
+  font-size: 3rem;
+  font-family: "Flamenco", cursive;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4), 4px 4px 2px rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 0 1rem;
+  text-align: center;
 }
 
-.birth::-webkit-datetime-edit {
-  padding: 0 1em;
+.art {
+  width: 40vw;
+  height: 40vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1rem;
 }
 
-.birth::-webkit-datetime-edit-text {
-  color: royalblue;
-  padding: 0 0.3em;
+@media (min-width: 600px) {
+  .art {
+    width: 15vw;
+    height: 15vw;
+  }
 }
 
-.birth::-webkit-datetime-edit-month-field {
-  color: purple;
-}
-
-.birth::-webkit-datetime-edit-day-field {
-  color: purple;
-}
-
-.birth::-webkit-datetime-edit-year-field {
-  color: purple;
-}
-
-.App {
+.desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 10px solid #b676ff;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 0 1rem 1rem 1rem;
+  padding: 0.5rem 0;
+}
+
+.desc h1 {
+  font-size: 3rem;
+  font-family: "Flamenco", cursive;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4), 4px 4px 2px rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 0 1rem;
+  text-align: center;
+  margin: 0 1rem 1rem 1rem;
+  border-bottom: 2px ridge #b676ff;
+}
+
+.desc p {
+  font-size: 1.5rem;
+  font-family: "Flamenco", cursive;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4), 4px 4px 2px rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 10px solid #b676ff;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 0 1rem 1rem 1rem;
+  padding: 0.5rem 0;
+}
+
+.about h1 {
+  font-size: 3rem;
+  font-family: "Flamenco", cursive;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4), 4px 4px 2px rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 0 1rem;
+  text-align: center;
+  padding-top: 0.5rem;
+  margin: 0 1rem 1rem 1rem;
+  border-bottom: 2px ridge #b676ff;
+}
+
+.about h3 {
+  font-size: 2rem;
+  font-family: "Flamenco", cursive;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4), 4px 4px 2px rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 0 1rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.about li {
+  font-size: 1.25rem;
+  font-family: "Flamenco", cursive;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4), 4px 4px 2px rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 0 1rem;
+  text-align: center;
+  text-align: left;
+  padding: 0;
+  list-style-position: inside;
+}
+
+.aboutContainer {
+  padding: 0.5rem;
+}
+
+.aboutTraits {
+  padding-bottom: 1rem;
+}
+
+/* customizing input date */
+.birth {
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid black;
+  width: 2rem;
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+#month {
+  width: 2.25rem;
+}
+
+#year {
+  width: 3rem;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -133,6 +542,8 @@
   font-family: "Flamenco", cursive;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4), 4px 4px 2px rgba(0, 0, 0, 0.2);
   color: white;
+  padding: 0 1rem;
+  text-align: center;
 }
 
 header {
@@ -149,12 +560,14 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
-  margin: 1rem;
-  border: 5px solid #b676ff;
+  border: 10px solid #b676ff;
   border-radius: 0.5rem;
   background-color: rgba(255, 255, 255, 0.4);
-  margin-bottom: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  padding: 0.5rem 0;
+  border-width: 5px;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .birthForm {
@@ -172,16 +585,29 @@ header {
 }
 
 .birthForm label {
-  padding-bottom: 1rem;
   font-size: 1.25rem;
   font-family: "Flamenco", cursive;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4), 4px 4px 2px rgba(0, 0, 0, 0.2);
   color: white;
+  padding: 0 1rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .birthForm p {
   display: none;
   color: red;
+}
+
+.birthForm .show {
+  display: block !important;
 }
 
 .birthForm button {
@@ -209,6 +635,72 @@ header {
 }
 
 .show {
-  display: block;
+  display: block !important;
+}
+
+@media (min-width: 600px) {
+  .birth {
+    width: 3rem;
+  }
+  #month {
+    width: 3rem;
+  }
+  #year {
+    width: 4rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: header;
+    -ms-flex-item-align: start;
+        align-self: start;
+  }
+  .signComp {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: sign;
+  }
+  .horoscopeComp {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: horoscope;
+  }
+  .artComp {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: rinsArt;
+    margin-top: 2rem;
+  }
+  .descComp {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: desc;
+    margin: 0 3rem;
+  }
+  .aboutComp {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: about;
+  }
+  .App {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30% 40% 30%;
+        grid-template-columns: 30% 40% 30%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "sign header rinsArt" "about horoscope desc";
+    justify-items: center;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=App.css.map */

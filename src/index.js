@@ -6,14 +6,14 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <div>
+    {/* <div>
           <div className="stars"></div>
           <div className="twinkling"></div>
-          {/* <div className="clouds"></div> */}
-          {/* <div id="stars"></div>
+          <div className="clouds"></div>
+          <div id="stars"></div>
           <div id="stars2"></div>
-          <div id="stars3"></div> */}
-    </div>
+          <div id="stars3"></div>
+    </div> */}
     <App />
   </React.StrictMode>,
   document.getElementById('root')

@@ -2,6 +2,8 @@
 @import './horoscope';
 @import './sign';
 @import './rinsArt';
+@import './desc';
+@import './about';
 @import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
 
 /* customizing input date */
@@ -9,35 +11,43 @@
   border-radius: 5px;
   background-color: white;
   border: 1px solid black;
-  &::-webkit-datetime-edit { padding: 0 1em; }
-  /* &::-webkit-datetime-edit-fields-wrapper { background: silver; } */
-  &::-webkit-datetime-edit-text { color: royalblue; padding: 0 0.3em; }
-  &::-webkit-datetime-edit-month-field { color: purple; }
-  &::-webkit-datetime-edit-day-field { color: purple; }
-  &::-webkit-datetime-edit-year-field { color: purple; }
-  /* &::-webkit-inner-spin-button { display: none; } */
-  /* &::-webkit-calendar-picker-indicator { background: orange; } */
+  // &::-webkit-datetime-edit { padding: 0 1em; }
+  // /* &::-webkit-datetime-edit-fields-wrapper { background: silver; } */
+  // &::-webkit-datetime-edit-text { color: royalblue; padding: 0 0.3em; }
+  // &::-webkit-datetime-edit-month-field { color: purple; }
+  // &::-webkit-datetime-edit-day-field { color: purple; }
+  // &::-webkit-datetime-edit-year-field { color: purple; }
+  // /* &::-webkit-inner-spin-button { display: none; } */
+  // /* &::-webkit-calendar-picker-indicator { background: orange; } */
+  width: 2rem;
+  padding: 0 5px;
+  margin: 0 5px;
+}
+#month{
+  width: 2.25rem;
+}
+
+#year{
+  width: 3rem;
 }
 
 .App{
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   flex-direction: column;
   align-items: center;
   z-index: 4;
   color: white;
+  // height: 400vh;
 }
 .birthHeader{
   @include fontFixer(4rem)
 }
 header{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  @include content;
+  border-width: 5px;
   padding: 1rem;
   margin: 1rem;
-  @include content;
 }
 
 .birthForm{
@@ -47,12 +57,17 @@ header{
   align-items: center;
 
   label{
-    padding-bottom: 1rem;
     @include fontFixer(1.25rem);
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
   }
   p{
     display: none;
     color: red;
+  }
+  .show{
+    display: block !important;
   }
 
   button{
@@ -79,7 +94,57 @@ header{
 }
 
 .show{
-  display: block;
+  display: block !important;
+}
+
+
+@media (min-width:600px){
+  .birth{
+    width: 3rem;
+  }
+  #month{
+    width: 3rem;
+  }
+  #year{
+    width: 4rem;
+  }
+}
+
+@media (min-width: 1050px){
+  header{
+    grid-area: header;
+    align-self: start;
+  }
+  .signComp{
+    grid-area: sign;
+  }
+  .horoscopeComp{
+    grid-area: horoscope;
+  }
+  .artComp{
+    grid-area: rinsArt;
+    margin-top: 2rem;
+  }
+  .descComp{
+    grid-area: desc;
+    margin: 0 3rem;
+  }
+  .aboutComp{
+    grid-area: about;
+  }
+  .App{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "sign header rinsArt"
+      // "sign horoscope rinsArt"
+      "about horoscope desc"
+    ;
+    justify-items: center;
+    flex-direction: initial;
+    align-items: center;
+  }
 }
 
 

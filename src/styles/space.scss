@@ -1,7 +1,13 @@
 // @import "../node_modules/susy/sass/susy/";
 // // @import "compass/reset";
 // @import "../node_modules/compass/lib/";
-
+// html, body{
+// 	height: 100%;
+// }
+body{
+	min-height: 100vh;
+	position: relative;
+}
 .stars, .twinkling, .clouds {
 	position:absolute;
 	display:block;
@@ -12,12 +18,12 @@
 
 .stars {
 	z-index: -4;
-	background: #000 url('./images/stars.png') repeat top center;
+	background: #000 url('./images/stars.png') repeat fixed center;
 }
 
 .twinkling{
 	z-index: -3;
-	background:transparent url('./images/twinkling.png') repeat top center;
+	background:transparent url('./images/twinkling.png') repeat fixed center;
 	animation: move-twink-back 200s linear infinite;
 }
 

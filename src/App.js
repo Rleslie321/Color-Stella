@@ -3,6 +3,8 @@ import React, {Component} from 'react';
 import Horoscope from './Horoscope';
 import Sign from './Sign';
 import RinsArt from './RinsArt';
+import Desc from './Desc';
+import About from './About';
 
 class App extends Component {
 
@@ -12,7 +14,11 @@ class App extends Component {
     var date = curr.toISOString().substr(0,10);
     this.state = {
       sign: null,
-      birth: date
+      day: "",
+      month: "",
+      year: "",
+      birth: date,
+      colors: []
     }
     this.astro_colors = [
       {sign:'Sagittarius', colors:['#A6606D', '#F2A341', '#F29544', '#F27D52', '#D97762']},
@@ -35,17 +41,9 @@ class App extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    let birth = this.state.birth;
-    let dash = birth.indexOf('-')+1;
-    let dash2 = birth.lastIndexOf('-')+1;
-    if(dash === -1){
-      dash = birth.indexOf('/')+1;
-      dash2 = birth.lastIndexOf('/')+1;
-    }
-    if(dash !== -1){
-      // console.log(this.state.birth.slice(dash,dash2-1), this.state.birth.slice(dash2));
-      let month = birth.slice(dash, dash2-1);
-      let day = birth.slice(dash2);
+      let month = this.state.month;
+      let day = this.state.day;
+      if(month !== null && day !==null && month.length === 2 && month > 0 && day > 0 && day.length === 2){
       const date = this.astro_dates.filter(item =>{
         return item.month === month;
       })[0];
@@ -55,16 +53,21 @@ class App extends Component {
       }else{
         sign = date.signs[1];
       }
+      let colors = this.astro_colors.filter(item => {
+        return item.sign === sign;
+      })[0].colors;
       this.setState({
-        sign
+        sign,
+        colors
       });
     }
     else{
       const warn = document.querySelector('#warning');
-      warn.text = "Enter date as YYYY-MM-DD";
+      warn.innerHTML = "Enter date as DD-MM-YYYY";
       warn.classList.toggle('show');
-      setTimeout((warn)=>{
-        warn.text = "";
+      setTimeout(()=>{
+        const warn = document.querySelector('#warning');
+        warn.innerHTML = "";
         warn.classList.toggle('show');
       }, 3000);
     }
@@ -75,6 +78,9 @@ class App extends Component {
         this.setState({
             [name]: value
         });
+        if(value.length >= 2 && name !== "year"){
+          e.target.nextElementSibling.focus();
+        }
   }
 
   render(){
@@ -86,7 +92,7 @@ class App extends Component {
             <form className="birthForm" onSubmit={this.handleSubmit}>
               <label>
                 Birthday: <span> </span>
-                <input 
+                {/* <input 
                   type="date" 
                   name="birth" 
                   className="birth"
@@ -94,6 +100,35 @@ class App extends Component {
                   onChange={this.handleChange}
                   value={this.state.birth}
                   placeholder="YYYY-MM-DD"
+                /> */}
+                <input 
+                  type="number" 
+                  name="month" 
+                  className="birth"
+                  id="month"
+                  onChange={this.handleChange}
+                  value={this.state.month}
+                  placeholder="MM"
+                  max="12"
+                />
+                <input 
+                  type="number"
+                  name="day" 
+                  className="birth"
+                  id="day"
+                  onChange={this.handleChange}
+                  value={this.state.day}
+                  placeholder="DD"
+                  max="31"
+                />
+                <input 
+                  type="number" 
+                  name="year" 
+                  className="birth"
+                  id="year"
+                  onChange={this.handleChange}
+                  value={this.state.year}
+                  placeholder="YYYY"
                 />
               </label>
               <p id="warning"></p>
@@ -101,9 +136,13 @@ class App extends Component {
             </form>
           </div>
         </header>
-        <Sign sign = {this.state.sign}/>
-        <Horoscope sign = {this.state.sign}/>
-        <RinsArt sign={this.state.sign}/>
+        <Sign sign = {this.state.sign} color = {this.state.colors[0]}/>
+        <Horoscope sign = {this.state.sign} color = {this.state.colors[1]}/>
+        <RinsArt sign = {this.state.sign} color = {this.state.colors[2]}/>
+        <Desc sign = {this.state.sign} color = {this.state.colors[3]}/>
+        <About sign = {this.state.sign} color = {this.state.colors[4]}/>
+        <div className="stars"></div>
+        <div className="twinkling"></div>
       </div>
     );
   }

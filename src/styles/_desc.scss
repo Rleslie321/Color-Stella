@@ -1,6 +1,6 @@
-@import '_var.scss';
 
-.horoscopeContainer{
+
+.desc{
     @include content;
     h1{
         @include fontFixer(3rem);
@@ -9,6 +9,6 @@
     }
 
     p{
-        @include fontFixer(1.5rem)
+        @include fontFixer(1.5rem);
     }
 }
