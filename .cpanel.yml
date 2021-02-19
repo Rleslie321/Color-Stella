@@ -1,0 +1,10 @@
+---
+deployment:
+ tasks:
+    - export DEPLOYPATH=/home/robexhrv/public_html/projects/colorstella
+    - /bin/cp -R /home/robexhrv/WheelyGoodChoices/build/static $DEPLOYPATH
+    - /bin/cp /home/robexhrv/WheelyGoodChoices/build/asset-manifest.json $DEPLOYPATH
+    - /bin/cp /home/robexhrv/WheelyGoodChoices/build/favicon.ico $DEPLOYPATH
+    - /bin/cp /home/robexhrv/WheelyGoodChoices/build/index.html $DEPLOYPATH
+    - /bin/cp /home/robexhrv/WheelyGoodChoices/build/manifest.json $DEPLOYPATH
+    - /bin/cp /home/robexhrv/WheelyGoodChoices/build/robots.txt $DEPLOYPATH
