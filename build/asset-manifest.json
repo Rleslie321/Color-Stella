@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/projects/listly/static/css/main.0d0d270c.chunk.css",
-    "main.js": "/projects/listly/static/js/main.829931c6.chunk.js",
-    "main.js.map": "/projects/listly/static/js/main.829931c6.chunk.js.map",
-    "runtime-main.js": "/projects/listly/static/js/runtime-main.0053293c.js",
-    "runtime-main.js.map": "/projects/listly/static/js/runtime-main.0053293c.js.map",
-    "static/js/2.0b1626ba.chunk.js": "/projects/listly/static/js/2.0b1626ba.chunk.js",
-    "static/js/2.0b1626ba.chunk.js.map": "/projects/listly/static/js/2.0b1626ba.chunk.js.map",
-    "index.html": "/projects/listly/index.html",
-    "static/css/main.0d0d270c.chunk.css.map": "/projects/listly/static/css/main.0d0d270c.chunk.css.map",
-    "static/js/2.0b1626ba.chunk.js.LICENSE.txt": "/projects/listly/static/js/2.0b1626ba.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/projects/listly/static/media/virgo.cd79d3a5.png",
-    "static/media/space.css": "/projects/listly/static/media/stars.90c266f7.png"
+    "main.css": "/projects/colorstella/static/css/main.98e473d3.chunk.css",
+    "main.js": "/projects/colorstella/static/js/main.829931c6.chunk.js",
+    "main.js.map": "/projects/colorstella/static/js/main.829931c6.chunk.js.map",
+    "runtime-main.js": "/projects/colorstella/static/js/runtime-main.fa244ad9.js",
+    "runtime-main.js.map": "/projects/colorstella/static/js/runtime-main.fa244ad9.js.map",
+    "static/js/2.0b1626ba.chunk.js": "/projects/colorstella/static/js/2.0b1626ba.chunk.js",
+    "static/js/2.0b1626ba.chunk.js.map": "/projects/colorstella/static/js/2.0b1626ba.chunk.js.map",
+    "index.html": "/projects/colorstella/index.html",
+    "static/css/main.98e473d3.chunk.css.map": "/projects/colorstella/static/css/main.98e473d3.chunk.css.map",
+    "static/js/2.0b1626ba.chunk.js.LICENSE.txt": "/projects/colorstella/static/js/2.0b1626ba.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/projects/colorstella/static/media/virgo.cd79d3a5.png",
+    "static/media/space.css": "/projects/colorstella/static/media/stars.90c266f7.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0053293c.js",
+    "static/js/runtime-main.fa244ad9.js",
     "static/js/2.0b1626ba.chunk.js",
-    "static/css/main.0d0d270c.chunk.css",
+    "static/css/main.98e473d3.chunk.css",
     "static/js/main.829931c6.chunk.js"
   ]
 }
