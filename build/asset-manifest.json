@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/projects/colorstella/static/css/main.98e473d3.chunk.css",
-    "main.js": "/projects/colorstella/static/js/main.829931c6.chunk.js",
-    "main.js.map": "/projects/colorstella/static/js/main.829931c6.chunk.js.map",
-    "runtime-main.js": "/projects/colorstella/static/js/runtime-main.fa244ad9.js",
-    "runtime-main.js.map": "/projects/colorstella/static/js/runtime-main.fa244ad9.js.map",
-    "static/js/2.0b1626ba.chunk.js": "/projects/colorstella/static/js/2.0b1626ba.chunk.js",
-    "static/js/2.0b1626ba.chunk.js.map": "/projects/colorstella/static/js/2.0b1626ba.chunk.js.map",
-    "index.html": "/projects/colorstella/index.html",
-    "static/css/main.98e473d3.chunk.css.map": "/projects/colorstella/static/css/main.98e473d3.chunk.css.map",
-    "static/js/2.0b1626ba.chunk.js.LICENSE.txt": "/projects/colorstella/static/js/2.0b1626ba.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/projects/colorstella/static/media/virgo.cd79d3a5.png",
-    "static/media/space.css": "/projects/colorstella/static/media/stars.90c266f7.png"
+    "main.css": "./static/css/main.98e473d3.chunk.css",
+    "main.js": "./static/js/main.829931c6.chunk.js",
+    "main.js.map": "./static/js/main.829931c6.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.fa244ad9.js",
+    "runtime-main.js.map": "./static/js/runtime-main.fa244ad9.js.map",
+    "static/js/2.0b1626ba.chunk.js": "./static/js/2.0b1626ba.chunk.js",
+    "static/js/2.0b1626ba.chunk.js.map": "./static/js/2.0b1626ba.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.98e473d3.chunk.css.map": "./static/css/main.98e473d3.chunk.css.map",
+    "static/js/2.0b1626ba.chunk.js.LICENSE.txt": "./static/js/2.0b1626ba.chunk.js.LICENSE.txt",
+    "static/media/App.css": "./static/media/virgo.cd79d3a5.png",
+    "static/media/space.css": "./static/media/stars.90c266f7.png"
   },
   "entrypoints": [
     "static/js/runtime-main.fa244ad9.js",
